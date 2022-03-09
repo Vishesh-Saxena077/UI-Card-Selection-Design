@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Wedding Invitation Card</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <link rel="stylesheet" type="text/css" href="StyleSheet.css">
+        
+    </head>
+    <body>
+        <main>
+            <nav>
+                <button id="actionbtn" onclick="openNav()">
+                    <i class="fa fa-bars" style="font-size:36px"></i>
+                    
+                </button>
+                <div id="myNav" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content">
+                        <a href="#">Wedding Cards</a>
+                        <a href="#">Birthday Cards</a>
+                        <a href="#">Feeling Cards</a>
+                        <a href="#">Anniversary Cards</a>
+                        <a href="#">Login/Signup</a>
+                    </div>
+</div>
+                <div class="div1">
+                    
+                </div>
+                <div class="div2">
+                    <ul>
+                        <li><a href="#">Wedding Cards</a></li>
+                        <li><a href="#">Birthday Cards</a></li>
+                        <li><a href="#">Feeling Cards</a></li>
+                        <li><a href="#">Anniversary Cards</a></li>
+                        <li><a href="#">Login/Signup</a></li>
+                    </ul>
+                </div>
+            </nav>
+            
+            
+            <div class="section">
+                <div class="division">
+                    <div class="division_text">
+                        Digital Card Details
+                    </div>
+                    
+                <div class="division2">
+                    <div class="indiv1">
+                        <div class="div_card1 div_card" id="div_card1" onclick="fun1()"></div>
+                        <div class="div_card2 div_card" id="div_card2" onclick="fun2()"></div>
+                        <div class="div_card3 div_card" id="div_card3" onclick="fun3()"></div>
+                    </div>
+                    <div class="indiv2">
+                        <h1 style="text-align: center">Card Title</h1>
+                        <h2>$499 <span style="font-size:20px;text-decoration: line-through">$3000</span></h2>
+                        
+                        <h2 style="color: lawngreen; float:right; ma; margin-top: -40px;">75%Off</h2>
+                        
+                        <p>
+                            Donec eu ornare mi. Sed finibus<br>
+                            condimentum mauris, ut dictum eros<br>
+                            maximus vitae. Nullam<br>
+                            condimentum tortor ac elit feugiat<br>
+                            iaculis. Aenean mauris nisl, blandit<br>
+                        </p>
+                        <center>
+                            <button  class="btn">Try this Card</button>
+                        </center>
+                        
+                    </div>
+                </div>
+                    <center><h1>Features</h1></center>
+                    <footer>
+                            <div class="li1">
+                                <center><div class="c"></div></center>
+                                
+                                Create your cardin just 5 mins</div>
+                            <div class="li1">
+                                <center><div class="c"></div></center>
+                                
+                                Customize the Text with "Edit this Page" Option</div>
+                            <div class="li1">
+                                <center><div class="c"></div></center>
+                                
+                                Editing is available after purchase also
+                            </div>
+                       
+                    </footer>
+                </div>
+            </div>
+            
+        </main>
+        <script>
+            function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+
+ var mediaQuery = window.matchMedia('(max-width: 500px)');
+
+            function fun1(){
+                                
+                document.getElementById("div_card1").style.zIndex = "3";
+                document.getElementById("div_card2").style.zIndex = "2";
+                document.getElementById("div_card3").style.zIndex = "1";
+                
+                if(mediaQuery.matches){
+                      //SETTING DEFAULT HIGHT AND WIDTH
+                document.getElementById("div_card1").style.height = "180px";
+                document.getElementById("div_card1").style.width = "120px";
+                
+                //ADJUSTING HIGHT AND WIDTH
+                document.getElementById("div_card2").style.height = "180px";
+                document.getElementById("div_card2").style.width = "120px";
+                document.getElementById("div_card3").style.height = "180px";
+                document.getElementById("div_card3").style.width = "120px";
+                }else{
+                    //SETTING DEFAULT HIGHT AND WIDTH
+                document.getElementById("div_card1").style.height = "375px";
+                document.getElementById("div_card1").style.width = "250px";
+                
+                //ADJUSTING HIGHT AND WIDTH
+                document.getElementById("div_card2").style.height = "330px";
+                document.getElementById("div_card2").style.width = "220px";
+                document.getElementById("div_card3").style.height = "330px";
+                document.getElementById("div_card3").style.width = "220px";
+                }
+            }
+            function fun2(){
+                document.getElementById("div_card1").style.zIndex = "1";
+                document.getElementById("div_card2").style.zIndex = "2";
+                document.getElementById("div_card3").style.zIndex = "1";
+                
+                if(mediaQuery.matches){
+                  
+                }else{
+                    //SETTING DEFAULT HIGHT AND WIDTH
+                document.getElementById("div_card2").style.height = "375px";
+                document.getElementById("div_card2").style.width = "250px";
+                
+                //ADJUSTING HIGHT AND WIDTH
+                document.getElementById("div_card1").style.height = "330px";
+                document.getElementById("div_card1").style.width = "220px";
+                document.getElementById("div_card3").style.height = "330px";
+                document.getElementById("div_card3").style.width = "220px";
+                }
+                
+            }
+            function fun3(){
+                document.getElementById("div_card1").style.zIndex = "1";
+                document.getElementById("div_card2").style.zIndex = "2";
+                document.getElementById("div_card3").style.zIndex = "3";
+                
+                if(mediaQuery.matches){
+                  
+                }else{
+                    //SETTING DEFAULT HIGHT AND WIDTH
+                document.getElementById("div_card3").style.height = "375px";
+                document.getElementById("div_card3").style.width = "250px";
+                
+                //ADJUSTING HIGHT AND WIDTH
+                document.getElementById("div_card2").style.height = "330px";
+                document.getElementById("div_card2").style.width = "220px";
+                document.getElementById("div_card1").style.height = "330px";
+                document.getElementById("div_card1").style.width = "220px";
+                }
+            }
+        </script>
+    </body>
+</html>

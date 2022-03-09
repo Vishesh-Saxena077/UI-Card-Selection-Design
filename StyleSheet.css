@@ -1,0 +1,288 @@
+ body{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: Arial, Helvetica, sans-serif;
+                transition: all 0.3s ease;
+                overflow-x: hidden;
+            }
+            main{
+                min-height: 100vh;
+                width: 100%;
+            }
+            nav{
+                min-height: 15vh;
+                width: 100%;
+                display: flex;
+                justify-content:space-evenly;
+                box-shadow: 0px 1px 20px 0px;
+            }
+            .div1{
+                min-height: 15vh;
+                width: 400px;
+                background-image: url(Celebrare.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+            }
+            .div2{
+                min-height: 10vh;
+                width: 65%;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                
+            }
+            ul{
+                display: block;
+            }
+            li{
+                line-height: 50px;
+                margin-left:15px; 
+                height: 50px;
+                width: 160px;
+                display: inline-block;
+                list-style-type: none;
+                text-align: center;
+                font-size: 1.2rem;
+                padding: 5px 5px 5px 5px;
+            }
+            li a{
+                color: black;
+                text-decoration: none;
+                font-weight: 500;
+            }
+            li a:hover{
+                color: orangered;
+                transition: all 0.3s ease;
+            }
+            #actionbtn {
+                margin-top:30px;
+                height: 50px;
+                width: 50px;
+                display: none;
+            }
+            /* Side Navigation css */
+            .overlay {
+                height: 100%;
+                width: 0;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                background-color: rgb(0,0,0);
+                background-color: rgba(0,0,0, 0.9);
+                overflow-x: hidden;
+                transition: 0.5s;
+                z-index: 10;
+                }
+
+                .overlay-content {
+                  position: relative;
+                  top: 25%;
+                  width: 100%;
+                  text-align: center;
+                  margin-top: 30px;
+                }
+
+                .overlay a {
+                  padding: 8px;
+                  text-decoration: none;
+                  font-size: 36px;
+                  color: #818181;
+                  display: block;
+                  transition: 0.3s;
+                }
+
+                .overlay a:hover, .overlay a:focus {
+                  color: #f1f1f1;
+                }
+
+                .overlay .closebtn {
+                  position: absolute;
+                  top: 20px;
+                  right: 45px;
+                  font-size: 60px;
+                }
+            .section{
+                margin-top:50px; 
+                height: 100vh;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                padding-top: 50px;
+            }
+            
+            .division{
+                height: 350px;
+                width: 70%;
+                background-color: black;
+                background-image: url(Background.jpg);
+                border-radius: 5rem; 
+                display: inline-block;
+                justify-content:flex-start;
+                padding: 10px 20px 10px 20px;
+            }
+            .division_text{
+                font-size: 3rem;
+                text-align: center;
+                font-style: italic;
+                color:white;
+                font-size: bold;
+            }
+            
+            .division2 {
+                min-height: 90vh;
+                width: 100px;
+                background-color: white;
+                min-width:100%;
+                border-radius:3rem;
+                box-shadow: 0px 2px 6px 0px;
+                border:1px solid gray;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .indiv1{
+                height: 500px;
+                width: 600px;
+                padding: 20px 20px 20px 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .indiv2{
+                height: 500px;
+                width: 300px;
+                padding: 20px 20px 20px 20px;
+                display: inline-block;
+                justify-content: center;
+            }
+            .btn{color:white; background-color:black; outline:none;border:none;border-radius: 0.5rem;height: 50px; width: 70%; font-size: 2rem;
+                margin-top: 50px;
+            }
+            
+            .div_card{
+                background-color:white;
+                height: 330px;
+                width: 220px;
+                box-shadow: 5px 10px 20px 5px;
+                border-radius: 1rem;
+            }
+            .div_card1{
+                height: 375px;
+                width: 250px;
+                z-index: 4;
+                position: absolute;
+                margin-left: -300px;
+                background-image: url("3110fae9-b8bb-496e-b9f0-37aaf6a9abe3.jpg");
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+            }
+            .div_card2{
+                position: absolute;
+                z-index:2;
+                background-image:url("40863b46-f42b-4123-8d17-5bdbfc5e7a7d.jpg");
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+            }
+            .div_card3{
+                position: absolute;
+                z-index:1;
+                margin-left: 300px;
+                background-image: url("eb27f7dc-14f7-4005-8601-7ace7dfa2f87.jpg");
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+            }
+            footer{
+                margin-top:50px; 
+                height: 150px;
+                width: 100%;
+                background: white;
+                border-radius:2rem;
+                padding: 10px 10px 10px 10px;
+                box-shadow: 0px 5px 15px 0px;
+                display: flex;
+                justify-content: space-evenly;
+                align-content: center
+            }
+            
+            .li1{
+                height: 150px;
+                width: 20%;
+                font-size:18px;
+                font-weight: bolder;
+                display: inline;
+            }
+            .c{
+                height: 100px;
+                width: 100px;
+                background: gray;
+                border-radius: 50%;
+                opacity: 0.5;
+            }
+            @media(max-width:500px){
+                #actionbtn{
+                    display: block;
+                }
+                .div2{
+                    display: none;
+                }
+                .section{
+                   margin-top: 0px; 
+                }
+                .division{ 
+                    border-radius: 1.5rem;
+                    height: 150px;
+                    width: 80%;
+                    padding: 5px 5px 5px 5px;
+                }
+                .division_text{
+                    font-size: 1.5rem;
+                }
+                .division2{
+                    min-height: 100vh;
+                    margin-top: 20px;
+                    border-radius: 1.5rem;
+                    display: inline-block;
+                    justify-content: center;
+                    
+                }
+                .div_card{
+                background-color:white;
+                height: 180px;
+                width: 120px;
+                box-shadow: 5px 10px 20px 5px;
+                border-radius: 1rem;
+            }
+                .indiv1{
+                    height: 200px;
+                    width: 80%;
+                }
+                .div_card1{
+                    margin-left: -100px;
+                }
+                .div_card2{
+                    margin-left: -0px;
+                }
+                .div_card3{
+                    margin-left: 80px;
+                }
+                .indiv2{
+                    height: 300px;
+                    width: 200px;
+               }
+                .btn{ 
+                    margin-top: 0px;
+                    height: 40px; width: 70%; font-size: 1rem;
+            }
+                footer{
+                    height: auto;
+                    display: inline-block;
+            }
+                
+            }
